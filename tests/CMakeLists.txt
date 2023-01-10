@@ -16,11 +16,15 @@ set(QOLM_TEST_TARGET ${QOLM_TESTS_PREFIX}_Tests)
 set(QOLM_TEST_TARGET_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 
 set(QOLM_TEST_SRCS  ${QOLM_TEST_TARGET_DIR}/Tests.cpp
-        ${QOLM_TEST_TARGET_DIR}/QOlmTests.cpp
-        ${QOLM_TEST_TARGET_DIR}/QOlmTests.cpp
+        # ${QOLM_TEST_TARGET_DIR}/QOlmTests.cpp
+        # ${QOLM_TEST_TARGET_DIR}/QOlmTests.cpp
+        ${QOLM_TEST_TARGET_DIR}/QOlmProxyTests.cpp
+        ${QOLM_TEST_TARGET_DIR}/QOlmProxyTests.cpp
 
         ${QOLM_TEST_TARGET_DIR}/include/Foo.hpp
         ${QOLM_TEST_TARGET_DIR}/include/FooList.hpp
+        ${QOLM_TEST_TARGET_DIR}/include/FooTree.hpp
+        ${QOLM_TEST_TARGET_DIR}/include/FooProxy.hpp
     )
 
 message(STATUS "Add Test: ${QOLM_TEST_TARGET}")
